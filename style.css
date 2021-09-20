@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p, figure {
+    margin: 0;
+}
+
+#order-summary-card {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 34px 0px hsla(245, 75%, 52%, 0.096);
+    margin: 10px 10px;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+#subtitle {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    margin: 20px 50px;
+    line-height: 1.5em;
+}
+#plan {
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+#text {
+    margin: 0 100px 0 20px;
+}
+
+#plan-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+#plan-amount {
+    color: hsl(224, 23%, 55%);
+}
+#change-link {
+    color: hsl(245, 75%, 52%);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .2s;
+}
+#change-link:hover {
+    text-decoration: none;
+    color: hsl(245, 94%, 69%);
+}
+#payment-button {
+    padding: 15px 100px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    box-shadow: 0px 10px 34px 0px hsla(245, 75%, 52%, 0.296);
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all .2s;
+}
+#payment-button:hover {
+    background-color: hsl(245, 94%, 69%);
+}
+#order-cancel-link {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    margin-bottom: 40px;
+    transition: all .2s;
+}
+#order-cancel-link:hover {
+    color: black
+}
+@media only screen and (max-width: 400px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+    }
+    #order-summary-card {
+        margin: 0 10px;
+    }
+}
+
+/* TODO: Make the website responsible */
